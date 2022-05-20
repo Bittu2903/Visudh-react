@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/nav';
+import Footer from './components/Footer/footer';
+import Contact from './components/Contact/contact';
+import About from './components/about/about';
+// import Faqs from './components/FAQS/faqs';
+import DarkMode from './components/darkmode/dark';
+import Corousel from './components/corousel/corousel';
+import FrontCards from './components/front-cards/front-cards';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+        <NavBar />
+        <FrontCards />
+        <About />
+        {/* <Corousel /> */}
+        {/* <Faqs /> */}
+        
+        <Contact />
+        {/* <DarkMode /> */}
+        <Footer />
     </div>
   );
 }
